@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		C8E4E39C299D2A2300DAAA64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4E39B299D2A2300DAAA64 /* AppDelegate.swift */; };
 		C8E4E39E299D2A2300DAAA64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4E39D299D2A2300DAAA64 /* SceneDelegate.swift */; };
-		C8E4E3A0299D2A2300DAAA64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4E39F299D2A2300DAAA64 /* ViewController.swift */; };
+		C8E4E3A0299D2A2300DAAA64 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4E39F299D2A2300DAAA64 /* LoginViewController.swift */; };
 		C8E4E3A3299D2A2300DAAA64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8E4E3A1299D2A2300DAAA64 /* Main.storyboard */; };
 		C8E4E3A5299D2A2300DAAA64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E4E3A4299D2A2300DAAA64 /* Assets.xcassets */; };
 		C8E4E3A8299D2A2300DAAA64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8E4E3A6299D2A2300DAAA64 /* LaunchScreen.storyboard */; };
+		C8E4E3B0299D334000DAAA64 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4E3AF299D334000DAAA64 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C8E4E398299D2A2300DAAA64 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E4E39B299D2A2300DAAA64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8E4E39D299D2A2300DAAA64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C8E4E39F299D2A2300DAAA64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8E4E39F299D2A2300DAAA64 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8E4E3A2299D2A2300DAAA64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8E4E3A4299D2A2300DAAA64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8E4E3A7299D2A2300DAAA64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8E4E3A9299D2A2300DAAA64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8E4E3AF299D334000DAAA64 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				C8E4E39B299D2A2300DAAA64 /* AppDelegate.swift */,
 				C8E4E39D299D2A2300DAAA64 /* SceneDelegate.swift */,
-				C8E4E39F299D2A2300DAAA64 /* ViewController.swift */,
+				C8E4E39F299D2A2300DAAA64 /* LoginViewController.swift */,
+				C8E4E3AF299D334000DAAA64 /* WelcomeViewController.swift */,
 				C8E4E3A1299D2A2300DAAA64 /* Main.storyboard */,
 				C8E4E3A4299D2A2300DAAA64 /* Assets.xcassets */,
 				C8E4E3A6299D2A2300DAAA64 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8E4E3A0299D2A2300DAAA64 /* ViewController.swift in Sources */,
+				C8E4E3A0299D2A2300DAAA64 /* LoginViewController.swift in Sources */,
+				C8E4E3B0299D334000DAAA64 /* WelcomeViewController.swift in Sources */,
 				C8E4E39C299D2A2300DAAA64 /* AppDelegate.swift in Sources */,
 				C8E4E39E299D2A2300DAAA64 /* SceneDelegate.swift in Sources */,
 			);
@@ -302,9 +306,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Dasha-Kulkova.LoginApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +337,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Dasha-Kulkova.LoginApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
