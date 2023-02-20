@@ -41,7 +41,7 @@
                                         <state key="normal" title="Log In"/>
                                         <connections>
                                             <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="bHO-Cs-bo1"/>
-                                            <segue destination="D1D-Et-RJg" kind="presentation" id="qfG-kw-3PJ"/>
+                                            <segue destination="D1D-Et-RJg" kind="presentation" modalPresentationStyle="fullScreen" id="qfG-kw-3PJ"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Oxf-Sd-55S">
@@ -90,11 +90,11 @@
             <objects>
                 <viewController id="D1D-Et-RJg" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Bl-CR-Ng6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LW-Z1-Lwh">
-                                <rect key="frame" x="171" y="372" width="72" height="36"/>
+                                <rect key="frame" x="171" y="382" width="72" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Log Out"/>
@@ -104,7 +104,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpc-pY-dhX">
-                                <rect key="frame" x="95.666666666666686" y="202.66666666666666" width="223" height="36"/>
+                                <rect key="frame" x="95.666666666666686" y="209.33333333333334" width="223" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="223" id="Hl7-b6-AE6"/>
                                 </constraints>

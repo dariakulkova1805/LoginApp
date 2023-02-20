@@ -19,10 +19,6 @@ class LoginViewController: UIViewController {
     private let userName = "Fruit"
     private let password = "Apple"
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     // MARK: - Override Methods
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -38,7 +34,7 @@ class LoginViewController: UIViewController {
     // MARK: - IB Actions
     
     @IBAction func logInButtonPressed() {
-        if userNameTextField.text != userName && passwordTextField.text != password {
+        if userNameTextField.text != userName || passwordTextField.text != password {
             alert(
                 title: "Invalid login or password",
                 message: "Please, enter correct login and password"
@@ -73,4 +69,5 @@ class LoginViewController: UIViewController {
         present(alert, animated: true)
     }
 }
+
 
