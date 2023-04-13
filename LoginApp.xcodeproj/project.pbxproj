@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8348B4429A3E7BB00397F3C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8348B4329A3E7BB00397F3C /* User.swift */; };
+		C8368D4F29CCBD1F007C014C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8368D4E29CCBD1F007C014C /* InfoViewController.swift */; };
 		C8E4E39C299D2A2300DAAA64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4E39B299D2A2300DAAA64 /* AppDelegate.swift */; };
 		C8E4E39E299D2A2300DAAA64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4E39D299D2A2300DAAA64 /* SceneDelegate.swift */; };
 		C8E4E3A0299D2A2300DAAA64 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4E39F299D2A2300DAAA64 /* LoginViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C8348B4329A3E7BB00397F3C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C8368D4E29CCBD1F007C014C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		C8E4E398299D2A2300DAAA64 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E4E39B299D2A2300DAAA64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8E4E39D299D2A2300DAAA64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8348B3F29A3E30B00397F3C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C8E4E39F299D2A2300DAAA64 /* LoginViewController.swift */,
+				C8E4E3AF299D334000DAAA64 /* WelcomeViewController.swift */,
+				C8368D4E29CCBD1F007C014C /* InfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C8348B4029A3E35700397F3C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C8E4E3A1299D2A2300DAAA64 /* Main.storyboard */,
+				C8E4E3A6299D2A2300DAAA64 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C8348B4129A3E37700397F3C /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C8E4E39B299D2A2300DAAA64 /* AppDelegate.swift */,
+				C8E4E39D299D2A2300DAAA64 /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		C8348B4629A3E7E000397F3C /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				C8348B4329A3E7BB00397F3C /* User.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
 		C8E4E38F299D2A2300DAAA64 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +98,11 @@
 		C8E4E39A299D2A2300DAAA64 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				C8E4E39B299D2A2300DAAA64 /* AppDelegate.swift */,
-				C8E4E39D299D2A2300DAAA64 /* SceneDelegate.swift */,
-				C8E4E39F299D2A2300DAAA64 /* LoginViewController.swift */,
-				C8E4E3AF299D334000DAAA64 /* WelcomeViewController.swift */,
-				C8E4E3A1299D2A2300DAAA64 /* Main.storyboard */,
+				C8348B4629A3E7E000397F3C /* Modals */,
+				C8348B3F29A3E30B00397F3C /* ViewControllers */,
+				C8348B4029A3E35700397F3C /* Storyboards */,
+				C8348B4129A3E37700397F3C /* SupportFiles */,
 				C8E4E3A4299D2A2300DAAA64 /* Assets.xcassets */,
-				C8E4E3A6299D2A2300DAAA64 /* LaunchScreen.storyboard */,
 				C8E4E3A9299D2A2300DAAA64 /* Info.plist */,
 			);
 			path = LoginApp;
@@ -144,6 +182,8 @@
 				C8E4E3A0299D2A2300DAAA64 /* LoginViewController.swift in Sources */,
 				C8E4E3B0299D334000DAAA64 /* WelcomeViewController.swift in Sources */,
 				C8E4E39C299D2A2300DAAA64 /* AppDelegate.swift in Sources */,
+				C8368D4F29CCBD1F007C014C /* InfoViewController.swift in Sources */,
+				C8348B4429A3E7BB00397F3C /* User.swift in Sources */,
 				C8E4E39E299D2A2300DAAA64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

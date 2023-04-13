@@ -16,14 +16,22 @@ class LoginViewController: UIViewController {
     
     // MARK: - Private Properties
     
-    private let userName = "Fruit"
-    private let password = "Apple"
+    private let user = User.getUser()
     
     // MARK: - Override Methods
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.user = userName
+        guard let tabBar = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBar.viewControllers else { return }
+        
+        viewControllers.forEach { viewController in
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.user = user.person.name
+            } else if let navigationVC = viewController as? UINavigationController {
+                guard let infoVC = navigationVC.topViewController as? InfoVeiwController else { return }
+                infoVC.user = user
+            }
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -34,7 +42,7 @@ class LoginViewController: UIViewController {
     // MARK: - IB Actions
     
     @IBAction func logInButtonPressed() {
-        if userNameTextField.text != userName || passwordTextField.text != password {
+        if userNameTextField.text != user.login || passwordTextField.text != user.password {
             alert(
                 title: "Invalid login or password",
                 message: "Please, enter correct login and password"
@@ -45,14 +53,14 @@ class LoginViewController: UIViewController {
     @IBAction func forgotUserName() {
         alert(
             title: "Oops!",
-            message: "Your name is \(userName)"
+            message: "Your name is \(user.login)"
         )
     }
     
     @IBAction func forgotPassword() {
         alert(
             title: "Oops!",
-            message: "Your name is \(password)"
+            message: "Your name is \(user.password)"
         )
     }
     
